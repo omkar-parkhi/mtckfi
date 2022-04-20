@@ -1,0 +1,91 @@
+
+$(".head").owlCarousel({
+	autoplay:true,
+	autoplayHoverPause:true,
+	items:3,
+	dots:false,
+	loop:true,
+	lazyload:true,
+	stagePadding:5,
+	responsive:{
+		0:{
+			items:1,
+            dots:false,
+            loop:true	
+		},
+		576:{
+			items:1,
+            dots:false,
+            dots:false	
+		},
+		768:{
+			items:1,
+            loop:true,
+            dots:false
+		},
+		992:{
+			items:1,
+            loop:true,
+            dots:false	
+		},
+		1200:{
+            items:1,
+            loop:true,
+			dots:false	
+		}
+	}
+	});
+
+	$(".main-content").owlCarousel({
+		autoplay:true,
+		autoplayHoverPause:true,
+		items:7,
+		dots:false,
+		loop:true,
+		margin:10,
+		lazyload:true,
+		stagePadding:5,
+		responsive:{
+			0:{
+				items:1,
+				dots:false,
+				loop:true,	
+				margin:0
+			},
+			576:{
+				items:1,
+				dots:false,
+				dots:false,
+				margin:0	
+			},
+			768:{
+				items:2,
+				loop:true,
+				dots:false,
+				margin:0
+			},
+			992:{
+				items:4,
+				loop:true,
+				dots:false	
+			},
+			1200:{
+				items:4,
+				loop:true,
+				dots:false	
+			}
+		}
+		});
+
+		lightGallery(document.getElementById('lightgallery'));
+
+		 //counterup 
+		 $('.count1').counterUp({
+			delay: 10,
+			time: 1000
+		});
+
+
+		$(document).ready(function(){
+				$('.logo-brand').delay(5000).slideUp(500);
+		});
